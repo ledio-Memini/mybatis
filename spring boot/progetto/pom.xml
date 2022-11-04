@@ -32,11 +32,13 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+
 		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -69,6 +71,23 @@
 	         <artifactId>mybatis-spring-boot-starter</artifactId>
 	         <version>2.2.0</version>
 	    </dependency>
+	    
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-entitymanager</artifactId>
+		    <version>5.2.3.Final</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>4.1.4.Final</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework.data</groupId>
+		    <artifactId>spring-data-elasticsearch</artifactId>
+		    <version>3.2.5.RELEASE</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>

@@ -1,5 +1,0 @@
-package com.progetto.springboot.exception;
-
-public class UserIdAlreadyExistException {
-
-}

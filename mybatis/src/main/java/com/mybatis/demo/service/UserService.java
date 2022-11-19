@@ -1,8 +1,10 @@
 package com.mybatis.demo.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
+import org.springframework.http.ResponseEntity;
 
 import com.mybatis.demo.domain.User;
 import com.mybatis.demo.mapper.UserMapper;
@@ -63,17 +65,23 @@ public class UserService {
 		}
 	}
 
-	public void deleteUser(Integer userId)
+	public ResponseEntity<Map<String, Boolean>> deleteUser(long id)
 	{
 		SqlSession sqlSession = MyBatisUtil.getSqlSessionFactory().openSession();
 		try
 		{
 			UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
-			userMapper.deleteUser(userId);
+			userMapper.deleteUser((int) id);
 			sqlSession.commit();
 		} finally
 		{
 			sqlSession.close();
 		}
+		return null;
+	}
+
+	public ResponseEntity<User> updateUser(String firstName, String lastName) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

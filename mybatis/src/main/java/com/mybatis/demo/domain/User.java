@@ -1,5 +1,8 @@
 package com.mybatis.demo.domain;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class User {
 
 	 	private Integer userId;

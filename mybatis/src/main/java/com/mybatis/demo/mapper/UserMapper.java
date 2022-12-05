@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.mybatis.demo.domain.User;
 
+
 public interface UserMapper {
 
     public void insertUser(User user);

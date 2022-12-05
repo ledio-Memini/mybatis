@@ -5,10 +5,12 @@ import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
 import com.mybatis.demo.domain.User;
 import com.mybatis.demo.mapper.UserMapper;
 
+@Service
 public class UserService {
 
 	public void insertUser(User user)
